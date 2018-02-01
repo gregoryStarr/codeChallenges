@@ -1,0 +1,31 @@
+.ButtonBar{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+    position: relative;
+    top: -80px;
+    background-color: rgba(174, 203, 231, 0.75);
+    border-radius: 4px;
+    border: #525252;
+    margin:10px;
+    padding:10px;
+}
+
+.ButtonBase{
+    display:flex;
+    padding:8px;
+    margin:2px;
+    background: #627181;
+    color: #343434;
+    cursor: pointer;
+    border-radius: 4px;
+    border: #525252;
+}
+
+.ButtonBase:hover{
+    color: #fff;
+    background: #8ca1b7;
+    cursor: grab;
+}
+
