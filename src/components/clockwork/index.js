@@ -11,10 +11,12 @@ class ClockWork extends Component{
         this.tiles = this.engine.createGridTiles()
     }
     render(){
+        const {dispatch} = this.props;
+        const points = this.props.store.getState().pointReducers.points;
         return(
             <div className="ClockWorkApp">
-            <Grid tiles = {this.tiles} width="80%" height="80%" cols={8} rows={8} className="Grid" />
-            <SideBar width={25} nextTile={getNumFromRange(0,5)} />
+            <Grid dispatch={dispatch} tiles = {this.tiles} width="80%" height="600px" cols={8} rows={8} className="Grid" />
+            <SideBar  points={points} width={25} nextTile={getNumFromRange(0,5)} />
         </div>)
     }
 };

@@ -6,10 +6,10 @@
   padding:4px;
   border-radius: 6px;
   border: 1px solid black;
-  background: #fefefd; /* Old browsers */
-  background: -moz-linear-gradient(top,  #fefefd 0%, #dce3c4 42%, #aebf76 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #fefefd 0%,#dce3c4 42%,#aebf76 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #fefefd 0%,#dce3c4 42%,#aebf76 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: rgba(254, 254, 253, 0); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(254, 254, 253, 0.47) 0%, rgba(220, 227, 196, 0.49) 42%, rgba(174, 191, 118, 0.47) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(254, 254, 253, 0.47) 0%, rgba(220, 227, 196, 0.49) 42%, rgba(174, 191, 118, 0.47) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(254, 254, 253, 0.47) 0%, rgba(220, 227, 196, 0.49) 42%, rgba(174, 191, 118, 0.47) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', endColorstr='#aebf76',GradientType=0 ); /* IE6-9 */
   cursor: url('/images/gregs-cursor.png'), auto;
   transition: all 2s;

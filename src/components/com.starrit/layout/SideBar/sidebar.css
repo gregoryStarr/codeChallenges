@@ -6,8 +6,31 @@
     padding:4px;
     border-radius: 6px;
     border: 1px solid black;
-    background: lightslategrey;
+    background: #fceabb; /* Old browsers */
+    background: -moz-linear-gradient(left,  #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+
     margin:2px;
     width:25%;
     max-width: 250px;
+
+    box-shadow: 0 0 10px white;
+}
+
+fieldset.Input-fieldset {
+    background: #f6f8f9;
+    background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+    background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+    background: linear-gradient(to bottom, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 );
+    text-align: left;
+    margin:2px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.Sidebar h1{
+    margin:0 0 0 8px;
 }

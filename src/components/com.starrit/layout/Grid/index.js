@@ -5,7 +5,7 @@ const Grid = (props) =>(
     <div className={props.className} style={{width:`${props.width}`, height:`${props.height}`}}>
         {
             props.tiles.map((tile) => (
-                <Tile key={Math.random()*100} {...tile} />
+                <Tile dispatch={props.dispatch} key={Math.random()*100} {...tile} />
             ))
         }
     </div>

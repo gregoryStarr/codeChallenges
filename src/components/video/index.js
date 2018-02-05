@@ -9,11 +9,6 @@ class Video extends Component{
         console.log("Constructed")
     }
 
-
-    componentDidMount(){
-
-    }
-
     componentWillUpdate(next){
         //debugger
         let playPromise = null;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Link, } from 'react-router-dom'
 import {pauseVideo, playVideo, stopVideo} from "./components/video/actions";
+import {addPoint} from "./components/clockwork/actions";
 import {connect} from 'react-redux'
 import { withRouter } from 'react-router-dom';
 import ViewContainer from './components/ViewContainer';
@@ -9,10 +10,11 @@ import ViewContainer from './components/ViewContainer';
 
 const mapStateToProps = (state) => {
     return {
-        videoSource: state.videoSource,
-        isPlaying: state.isPlaying,
-        isPaused: state.isPaused,
-        showControls:state.showControls
+        videoSource: state.playerReducers.videoSource,
+        isPlaying: state.playerReducers.isPlaying,
+        isPaused: state.playerReducers.isPaused,
+        showControls:state.playerReducers.showControls,
+        points:state.pointReducers.points
     };
 }
 
@@ -21,7 +23,8 @@ const mapDispatchToProps = dispatch => {
         dispatch,
         onStart: playVideo,
         onStop: stopVideo,
-        onPause:pauseVideo
+        onPause:pauseVideo,
+        addPoint:addPoint
         }
     };
 

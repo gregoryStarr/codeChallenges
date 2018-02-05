@@ -1,0 +1,1 @@
+export const ADDPOINT = "ADD_GAME_POINT";

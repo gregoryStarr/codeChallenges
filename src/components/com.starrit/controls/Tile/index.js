@@ -8,6 +8,8 @@ import {Horizontal,
     ThreeWayRight,
     Vertical} from "../../media/icons/paths/";
 import {getNumFromRange} from "../../../clockwork/utilities";
+import {addPoint} from "../../../clockwork/actions";
+
 
 const icons = [
     Horizontal    ,
@@ -25,11 +27,35 @@ const WrappedIcon = (PassedComponent,props) => {
 };
 
 
-const Tile=(props)=>(
-            <div className="Grid-tile custom-cursor">
-                { props.faceUp && WrappedIcon(icons[props.icon],props)}
+class Tile extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            faceUp:this.props.faceUp | false,
+            icon:props.icon,
+        }
+    }
+
+    componentDidMount(){
+
+    }
+
+    onClick(e){
+        this.setState({faceUp: this.state.faceUp ? false : true})
+        this.props.dispatch(addPoint())
+    }
+
+
+    render(){
+        const {style, ...props} = this.props;
+        console.log("rendering ::" + this.state.faceUp)
+        return (
+            <div className="Grid-tile custom-cursor" onClick={(e)=>this.onClick(e)} style={{...style}}>
+                { this.state.faceUp && WrappedIcon(icons[props.icon],props)}
             </div>
-);
+        )
+    }
+}
 
 Tile.defaultProps = {
     icon:getNumFromRange(0,5),

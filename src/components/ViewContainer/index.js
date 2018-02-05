@@ -24,9 +24,9 @@ const PropsRoute = ({ component, ...rest }) => {
 const ViewContainer = (props) => (
         <Switch>
             <PropsRoute exact path='/' component={Home}/>
-            <PropsRoute  path='/video' {...props} autoPlay={true} showControls={true} component={Video}/>
+            <PropsRoute  path='/video' {...props} loop={true} autoPlay={true} showControls={true} component={Video}/>
             <PropsRoute path='/goldenfrog' component={GoldenFrog}/>
-            <PropsRoute path='/clockwork' component={ClockWork}/>
+            <PropsRoute path='/clockwork' {...props} component={ClockWork}/>
         </Switch>
 )
 
