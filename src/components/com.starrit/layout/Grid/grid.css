@@ -1,0 +1,13 @@
+.Grid {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding:8px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background:grey;
+    margin:2px;
+    width:100%
+}

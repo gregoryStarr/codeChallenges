@@ -1,0 +1,1 @@
+export const getNumFromRange= (low,high) => ( Math.floor(Math.random() * high) + low)

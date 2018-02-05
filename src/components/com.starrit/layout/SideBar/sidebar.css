@@ -1,0 +1,13 @@
+.Sidebar {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    padding:4px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: lightslategrey;
+    margin:2px;
+    width:25%;
+    max-width: 250px;
+}

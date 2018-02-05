@@ -1,0 +1,13 @@
+import React from 'react'
+const ThreeWayLeft = (props) =>(
+    <svg {...props}
+        preserveAspectRatio="xMidYMid"
+        viewBox="0 0 49 25">
+        <image
+            width="100%"
+            height="100%"
+            href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAyCAMAAAAHpFkRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABEVBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyA7Ojx1d3mNj5KNj5K5u70jHyDBwsQjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyDOz9EjHyDQ0dMjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyDT1NYjHyAjHyAjHyAjHyAjHyAjHyBlZmj///8jHyAAAABSxCqFAAAAWXRSTlMAB8WQVXxg+PDoRzaZb9NApnCg8jEwG2ZlX1BRiL9444Dzos+e2trPzsj6yPTxuSeFnJKRh4uNtu7C3O3EwBogFsbVyAPKEJgFS6PUrYNcCcR1TiUED1uADjADGXsAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAA/0lEQVQ4y+3Q61NBQRjH8UdYG0oKhQpFClEourp2dyuS/f//EcSs3TPnaZ43Zrzo+2bPb+YzO3MWQMuyJuZZbXY2+3LwdaeuwCUkY+4NOTYNzKOwLa8c/A+2vSy2Y2A+cyYMzL/CjPgLHowFdr17jLFgKBSeHPsYOxDmTdihwiI4i8oRA05h/J+tODuiseM4iYkEiZ0kSez0TGEpnKXlyICgMAHnNJalsdzFZf63QvEqf13CWFm74+YWYXcau39A2GNFrVpDmKE6jUVojNOY+iANlDVV9oSyZxqzvJQpDOD17T2jsdRHq90Bk7q2lmPKerX451d/AHjfwc7wZ7TYY2ovxDTE16JXAAAAAElFTkSuQmCC" />
+    </svg>
+);
+
+export default ThreeWayLeft;

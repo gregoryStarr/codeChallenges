@@ -6,8 +6,10 @@ import registerServiceWorker from './registerServiceWorker';
 import {Provider} from 'react-redux'
 import {createStore, applyMiddleware} from "redux";
 import {playerReducers} from "./components/video/reducers";
+//import ViewContainer from './components/ViewContainer/index'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter } from 'react-router-dom'
+
 const initialState = {
     videoSource:'',
     isPlaying:false,
@@ -27,13 +29,17 @@ const store = createStore(
         // other store enhancers if any
     ))
 
-ReactDOM.render(
 
-        <BrowserRouter>
+
+ReactDOM.render(
             <Provider store={store} >
-            <App />
+                <BrowserRouter >
+                    <App />
+                </BrowserRouter>
             </Provider>
-        </BrowserRouter>
    ,
     document.getElementById('root'));
 registerServiceWorker();
+
+store.dispatch({type:"SET_VIDEO_SOURCE", videoSource:'http://localhost:3000/video'})
+store.dispatch({type:"VIDEO_PLAY"})

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Link} from 'react-router-dom'
+import { Link, } from 'react-router-dom'
 import {pauseVideo, playVideo, stopVideo} from "./components/video/actions";
-import ViewContainer from './components/ViewContainer'
 import {connect} from 'react-redux'
+import { withRouter } from 'react-router-dom';
+import ViewContainer from './components/ViewContainer';
+
 
 const mapStateToProps = (state) => {
     return {
@@ -24,24 +26,23 @@ const mapDispatchToProps = dispatch => {
     };
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <p>A Collection of Code Challenges</p>
             <nav>
-                <ul>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/video'>VIDEO</Link></li>
-                    <li><Link to='/clockwork'>CLOCKWORK</Link></li>
-                    <li><Link to='/goldenfrog'>GOLDENFROG</Link></li>
-                </ul>
+                <Link className="nav-link"  to='/'>Home</Link>
+                <Link className="nav-link" to='/video'>VIDEO</Link>
+                <Link className="nav-link" to='/clockwork'>CLOCKWORK</Link>
+                <Link className="nav-link" to='/goldenfrog'>GOLDENFROG</Link>
             </nav>
         </header>
-         <ViewContainer />
+          <ViewContainer {...this.props}/>
       </div>
     );
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
