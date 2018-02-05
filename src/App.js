@@ -37,9 +37,9 @@ class App extends Component {
           <p>A Collection of Code Challenges</p>
             <nav>
                 <Link className="nav-link"  to='/'>Home</Link>
-                <Link className="nav-link" to='/video'>VIDEO</Link>
-                <Link className="nav-link" to='/clockwork'>CLOCKWORK</Link>
-                <Link className="nav-link" to='/goldenfrog'>GOLDENFROG</Link>
+                <Link className="nav-link" to='/video'>Video App and API w/ redux</Link>
+                <Link className="nav-link" to='/clockwork'>Casino Game layout and structure</Link>
+                <Link className="nav-link" to='/goldenfrog'>Basic Design concept </Link>
             </nav>
         </header>
           <ViewContainer {...this.props}/>

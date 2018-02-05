@@ -3,7 +3,7 @@ import React from 'react'
 const GoldenFrog = () => (
 
     <div>
-        <h1>GoldenFrog</h1>
+        <h1>Coming in a few days...</h1>
     </div>
 )
 
